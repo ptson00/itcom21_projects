@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 19.25" name="DataITCOM">
+  <DataContextMoniker Name="/DataITCOMDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0eba211b-c741-4bd6-904f-f7eb37427c74" absoluteBounds="3.75, 5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/DataITCOMDataContext/user_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e2acb89-9567-400d-9a02-97805dd9b963" absoluteBounds="3.765, 5.46, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc6c111d-78c1-460b-bb27-610c3956029c" absoluteBounds="3.5, 1.125, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/DataITCOMDataContext/cost_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17add616-1d7d-4bb4-89b9-b27cf2e19f9e" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76bda753-08c9-4e95-a325-08babc1c311d" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataITCOMDataContext/insurance_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d8ee67e-6dd0-4d97-8457-d0f322f38a8f" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="235628fe-6e5e-4b64-83e9-12d748c3ac66" absoluteBounds="0.75, 4, 2, 1.193992513020834">
+      <DataClassMoniker Name="/DataITCOMDataContext/package_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5b926a3-dd99-4b9a-a2f6-4873281013a6" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba9db8fc-d3fe-4bf1-84de-33778a6b2e86" absoluteBounds="0.75, 5.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataITCOMDataContext/rankAge_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c99fd00-5cf1-4669-a1a9-c6b5c53b80ef" absoluteBounds="0.765, 6.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c64c0d5-423a-48e4-a4ed-6abd98623e22" absoluteBounds="7.125, 9.125, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/DataITCOMDataContext/role_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1d91c27-b6c7-4b71-834f-807c182f55cb" absoluteBounds="7.1400000000000006, 9.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e8c7c31-ca6c-43dd-81d0-243a22f6e0c6" absoluteBounds="0.75, 13.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataITCOMDataContext/status_appointment_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9939bacb-399d-415f-a9ae-a00f6febb64f" absoluteBounds="0.765, 13.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b927aac-8d12-448c-bf55-43941ad70eb8" absoluteBounds="6.5, 5.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataITCOMDataContext/user_role_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="664b5d18-f257-4271-893b-74bb1e1c1353" absoluteBounds="6.515, 6.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.45923076923077 : 8.88621256510417); (4.45923076923077 : 9.13621256510417); (5.05461538461539 : 9.13621256510417); (5.05461538461539 : 8.88621256510417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/user_tbl/user_tbl_user_tbl" />
+      <nodes>
+        <classShapeMoniker Id="0eba211b-c741-4bd6-904f-f7eb37427c74" />
+        <classShapeMoniker Id="0eba211b-c741-4bd6-904f-f7eb37427c74" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/insurance_tbl/insurance_tbl_cost_tbl" />
+      <nodes>
+        <classShapeMoniker Id="76bda753-08c9-4e95-a325-08babc1c311d" />
+        <classShapeMoniker Id="bc6c111d-78c1-460b-bb27-610c3956029c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.46875); (3.04166666666667 : 4.46875 : JumpStart); (3.20833333333333 : 4.46875 : JumpEnd); (3.59375 : 4.46875); (3.59375 : 2.89589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/package_tbl/package_tbl_cost_tbl" />
+      <nodes>
+        <classShapeMoniker Id="235628fe-6e5e-4b64-83e9-12d748c3ac66" />
+        <classShapeMoniker Id="bc6c111d-78c1-460b-bb27-610c3956029c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.87591745577925); (3.125 : 5.50091745577925); (3.125 : 2.46519853320312); (3.5 : 2.46519853320312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/rankAge_tbl/rankAge_tbl_cost_tbl" />
+      <nodes>
+        <classShapeMoniker Id="ba9db8fc-d3fe-4bf1-84de-33778a6b2e86" />
+        <classShapeMoniker Id="bc6c111d-78c1-460b-bb27-610c3956029c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.8125 : 9.125); (7.8125 : 8.03049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/role_tbl/role_tbl_user_role_tbl" />
+      <nodes>
+        <classShapeMoniker Id="8c64c0d5-423a-48e4-a4ed-6abd98623e22" />
+        <classShapeMoniker Id="6b927aac-8d12-448c-bf55-43941ad70eb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 6.95274983723958); (6.5 : 6.95274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/user_tbl/user_tbl_user_role_tbl" />
+      <nodes>
+        <classShapeMoniker Id="0eba211b-c741-4bd6-904f-f7eb37427c74" />
+        <classShapeMoniker Id="6b927aac-8d12-448c-bf55-43941ad70eb8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cc78bc62-bca4-41ec-aba9-2f1e45f19488" absoluteBounds="0.75, 8.625, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/DataITCOMDataContext/qaqc_appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b6a3b1c-fb5f-4326-93e8-3d1095aa37fb" absoluteBounds="0.76500000000000012, 9.085, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d485b627-bdb0-4f10-bc8f-60606bd6efa9" absoluteBounds="6.75, 3, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DataITCOMDataContext/appointment_cost_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="adac7418-f0fc-4c31-a288-ee076a526fd4" absoluteBounds="6.765, 3.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.01044840494792); (7.75 : 2.01044840494792); (7.75 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/cost_tbl/cost_tbl_appointment_cost_tbl" />
+      <nodes>
+        <classShapeMoniker Id="bc6c111d-78c1-460b-bb27-610c3956029c" />
+        <classShapeMoniker Id="d485b627-bdb0-4f10-bc8f-60606bd6efa9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2ab6aa53-9797-4c02-b5ba-3e359eff3c83" absoluteBounds="4, 9.5, 2, 7.5399397786458326">
+      <DataClassMoniker Name="/DataITCOMDataContext/appointment_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ea70b50-7235-484d-8657-290da3e65f5d" absoluteBounds="4.015, 9.96, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 11.1017569986979); (2.75 : 11.1017569986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/appointment_tbl/appointment_tbl_qaqc_appointment" />
+      <nodes>
+        <classShapeMoniker Id="2ab6aa53-9797-4c02-b5ba-3e359eff3c83" />
+        <classShapeMoniker Id="cc78bc62-bca4-41ec-aba9-2f1e45f19488" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.90625 : 9.5); (5.90625 : 3.96875); (6.75 : 3.96875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/appointment_tbl/appointment_tbl_appointment_cost_tbl" />
+      <nodes>
+        <classShapeMoniker Id="2ab6aa53-9797-4c02-b5ba-3e359eff3c83" />
+        <classShapeMoniker Id="d485b627-bdb0-4f10-bc8f-60606bd6efa9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.7219962565104); (4 : 13.7219962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/status_appointment_tbl/status_appointment_tbl_appointment_tbl" />
+      <nodes>
+        <classShapeMoniker Id="3e8c7c31-ca6c-43dd-81d0-243a22f6e0c6" />
+        <classShapeMoniker Id="2ab6aa53-9797-4c02-b5ba-3e359eff3c83" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="da4b51f0-96ee-4339-83ac-546c6066867d" absoluteBounds="1.375, 14.75, 2, 4.2708154296875">
+      <DataClassMoniker Name="/DataITCOMDataContext/application_admin_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef6597e8-406e-4ff4-b7e1-118b4a5984fd" absoluteBounds="1.3900000000000001, 15.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 15.8949698893229); (3.375 : 15.8949698893229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/appointment_tbl/appointment_tbl_application_admin_tbl" />
+      <nodes>
+        <classShapeMoniker Id="2ab6aa53-9797-4c02-b5ba-3e359eff3c83" />
+        <classShapeMoniker Id="da4b51f0-96ee-4339-83ac-546c6066867d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="95560490-a52d-4129-a3be-4b2c672ef622" absoluteBounds="6.625, 11.375, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/DataITCOMDataContext/application_qa_tbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10ee0054-a65a-4cd1-b4b8-a382ec8cbfeb" absoluteBounds="6.64, 11.835, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 13.3181062825521); (6.625 : 13.3181062825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataITCOMDataContext/appointment_tbl/appointment_tbl_application_qa_tbl" />
+      <nodes>
+        <classShapeMoniker Id="2ab6aa53-9797-4c02-b5ba-3e359eff3c83" />
+        <classShapeMoniker Id="95560490-a52d-4129-a3be-4b2c672ef622" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
