@@ -1,0 +1,80 @@
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\bin\Release\Quản lý giấy hẹn.exe.config
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\bin\Release\Quản lý giấy hẹn.exe
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\bin\Release\Quản lý giấy hẹn.pdb
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.ChangePassword.resources
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.ImportData.resources
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.Login.resources
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.Properties.Resources.resources
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.csproj.GenerateResource.cache
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.csproj.CoreCompileInputs.cache
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Quản lý giấy hẹn.exe
+D:\example\Dashboard_ITCom21\Dashboard_ITCom21\obj\Release\Quản lý giấy hẹn.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Quản lý giấy hẹn.exe.config
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Quản lý giấy hẹn.exe
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Quản lý giấy hẹn.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\BouncyCastle.Cryptography.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Enums.NET.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\ExcelMapper.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\MathNet.Numerics.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Microsoft.IO.RecyclableMemoryStream.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.Core.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OOXML.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OpenXml4Net.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OpenXmlFormats.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\SixLabors.Fonts.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\SixLabors.ImageSharp.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Buffers.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Memory.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Numerics.Vectors.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Security.AccessControl.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Security.Cryptography.Xml.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Security.Principal.Windows.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Text.Encoding.CodePages.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Text.Encodings.Web.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Text.Json.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.ValueTuple.dll
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\BouncyCastle.Cryptography.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Enums.NET.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Enums.NET.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\ExcelMapper.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\ICSharpCode.SharpZipLib.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\ICSharpCode.SharpZipLib.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\MathNet.Numerics.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\Microsoft.IO.RecyclableMemoryStream.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.Core.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.Core.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OOXML.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OOXML.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OpenXml4Net.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OpenXml4Net.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OpenXmlFormats.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\NPOI.OpenXmlFormats.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\SixLabors.Fonts.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\SixLabors.ImageSharp.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Buffers.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Memory.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Numerics.Vectors.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Security.AccessControl.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Security.Cryptography.Xml.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Security.Principal.Windows.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Text.Encoding.CodePages.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Text.Encodings.Web.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Text.Json.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\bin\Release\System.ValueTuple.xml
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.ChangePassword.resources
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.ImportData.resources
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.Login.resources
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.Properties.Resources.resources
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.csproj.GenerateResource.cache
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.csproj.CoreCompileInputs.cache
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.csproj.CopyComplete
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Quản lý giấy hẹn.exe
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Quản lý giấy hẹn.pdb
+D:\example\Dashboard_ITCom21 - exportEX\Dashboard_ITCom21\obj\Release\Dashboard_ITCom21.csproj.AssemblyReference.cache

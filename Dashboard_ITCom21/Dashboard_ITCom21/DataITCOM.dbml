@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="admin_itcom21" Class="DataITCOMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=115.79.208.27,1433;Initial Catalog=admin_itcom21;Persist Security Info=True;User ID=admin" SettingsObjectName="Dashboard_ITCom21.Properties.Settings" SettingsPropertyName="admin_itcom21ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.user_tbl" Member="user_tbls">
+    <Type Name="user_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="full_name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="birthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phone_number" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="manager_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modify_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modify_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="zalo_id" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="redmine_id" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="contract_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="user_tbl_user_tbl" Member="user_tbls" ThisKey="id" OtherKey="manager_id" Type="user_tbl" />
+      <Association Name="user_tbl_user_role_tbl" Member="user_role_tbls" ThisKey="id" OtherKey="user_id" Type="user_role_tbl" />
+      <Association Name="user_tbl_user_tbl" Member="user_tbl1" ThisKey="manager_id" OtherKey="id" Type="user_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cost_tbl" Member="cost_tbls">
+    <Type Name="cost_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="insurance_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="package_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="age_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="price" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="cost_tbl_appointment_cost_tbl" Member="appointment_cost_tbls" ThisKey="id" OtherKey="cost_id" Type="appointment_cost_tbl" />
+      <Association Name="insurance_tbl_cost_tbl" Member="insurance_tbl" ThisKey="insurance_id" OtherKey="id" Type="insurance_tbl" IsForeignKey="true" />
+      <Association Name="package_tbl_cost_tbl" Member="package_tbl" ThisKey="package_id" OtherKey="id" Type="package_tbl" IsForeignKey="true" />
+      <Association Name="rankAge_tbl_cost_tbl" Member="rankAge_tbl" ThisKey="age_id" OtherKey="id" Type="rankAge_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.insurance_tbl" Member="insurance_tbls">
+    <Type Name="insurance_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="insurance_tbl_cost_tbl" Member="cost_tbls" ThisKey="id" OtherKey="insurance_id" Type="cost_tbl" />
+    </Type>
+  </Table>
+  <Table Name="dbo.package_tbl" Member="package_tbls">
+    <Type Name="package_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="package_tbl_cost_tbl" Member="cost_tbls" ThisKey="id" OtherKey="package_id" Type="cost_tbl" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rankAge_tbl" Member="rankAge_tbls">
+    <Type Name="rankAge_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="rankAge_tbl_cost_tbl" Member="cost_tbls" ThisKey="id" OtherKey="age_id" Type="cost_tbl" />
+    </Type>
+  </Table>
+  <Table Name="dbo.role_tbl" Member="role_tbls">
+    <Type Name="role_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modify_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modify_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="role_tbl_user_role_tbl" Member="user_role_tbls" ThisKey="id" OtherKey="role_id" Type="user_role_tbl" />
+    </Type>
+  </Table>
+  <Table Name="dbo.status_appointment_tbl" Member="status_appointment_tbls">
+    <Type Name="status_appointment_tbl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="status_appointment_tbl_appointment_tbl" Member="appointment_tbls" ThisKey="Id" OtherKey="status_ap" Type="appointment_tbl" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_role_tbl" Member="user_role_tbls">
+    <Type Name="user_role_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="role_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modify_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modify_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="role_tbl_user_role_tbl" Member="role_tbl" ThisKey="role_id" OtherKey="id" Type="role_tbl" IsForeignKey="true" />
+      <Association Name="user_tbl_user_role_tbl" Member="user_tbl" ThisKey="user_id" OtherKey="id" Type="user_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.qaqc_appointment" Member="qaqc_appointments">
+    <Type Name="qaqc_appointment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appointment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="call_date" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="waiting_time" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="fcp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lead" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="note13" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="covid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="upsell" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="upgrade" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="family" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updated_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="updated_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="no_reponse" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="appointment_tbl_qaqc_appointment" Member="appointment_tbl" ThisKey="appointment_id" OtherKey="id" Type="appointment_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.appointment_cost_tbl" Member="appointment_cost_tbls">
+    <Type Name="appointment_cost_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appointment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cost_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="itc_present" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bv_present" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sinhmang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tainan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="upbv_present" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ash_present" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="cost_tbl_appointment_cost_tbl" Member="cost_tbl" ThisKey="cost_id" OtherKey="id" Type="cost_tbl" IsForeignKey="true" />
+      <Association Name="appointment_tbl_appointment_cost_tbl" Member="appointment_tbl" ThisKey="appointment_id" OtherKey="id" Type="appointment_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.appointment_tbl" Member="appointment_tbls">
+    <Type Name="appointment_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tsr_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="appointment_date" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="appointment_time" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ap_customer" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ap_phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ap_address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rq_customer" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="rq_cccd" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="rq_sex" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="rq_birthday" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="rq_phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="rq_address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="in_customer" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="in_cccd" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="in_sex" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="in_birthday" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="in_relationship" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="be_customer" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="be_sex" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="be_birthday" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="be_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="be_relationship" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="team_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updated_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="updated_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status_ap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gr_cccd_sdt" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gr_sl" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gr_note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="cccd_status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="appointment_tbl_qaqc_appointment" Member="qaqc_appointments" ThisKey="id" OtherKey="appointment_id" Type="qaqc_appointment" />
+      <Association Name="appointment_tbl_appointment_cost_tbl" Member="appointment_cost_tbls" ThisKey="id" OtherKey="appointment_id" Type="appointment_cost_tbl" />
+      <Association Name="appointment_tbl_application_admin_tbl" Member="application_admin_tbls" ThisKey="id" OtherKey="appointment_id" Type="application_admin_tbl" />
+      <Association Name="appointment_tbl_application_qa_tbl" Member="application_qa_tbls" ThisKey="id" OtherKey="appointment_id" Type="application_qa_tbl" />
+      <Association Name="status_appointment_tbl_appointment_tbl" Member="status_appointment_tbl" ThisKey="status_ap" OtherKey="Id" Type="status_appointment_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.application_admin_tbl" Member="application_admin_tbls">
+    <Type Name="application_admin_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appointment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="contract_number" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="payment_methoy" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="from_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="to_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="applied_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="payment_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="rounder" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="peding_reason" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="private_note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="admin_note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="proposer_add" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="insured_add" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="updated_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updated_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="appointment_tbl_application_admin_tbl" Member="appointment_tbl" ThisKey="appointment_id" OtherKey="id" Type="appointment_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.application_qa_tbl" Member="application_qa_tbls">
+    <Type Name="application_qa_tbl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appointment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="policy_type" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="renewal_type" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="firstpolicy_year" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="pure_introduce" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lead_sourceQA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="lead_source" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="upsell_plan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rider_plan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="noofcall" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="from_list" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="created_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updated_user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="updated_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="appointment_tbl_application_qa_tbl" Member="appointment_tbl" ThisKey="appointment_id" OtherKey="id" Type="appointment_tbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
